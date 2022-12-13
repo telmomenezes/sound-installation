@@ -17,6 +17,6 @@ setup(
     install_requires=['pyserial'],
     entry_points='''
         [console_scripts]
-        learner=soundinst.__main__:cli
+        soundinst=soundinst.__main__:cli
     '''
 )

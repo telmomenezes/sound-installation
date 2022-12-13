@@ -1,5 +1,7 @@
 import argparse
 
+from soundinst.inst import play, list_ports
+
 
 def cli():
     parser = argparse.ArgumentParser()
@@ -11,7 +13,8 @@ def cli():
 
     # execute command
     if args.command == 'play':
-        # args.dir
-        pass
+        play(args.dir)
+    elif args.command == 'ports':
+        list_ports()
     else:
         print('Unknown command: {}'.format(args.command))
