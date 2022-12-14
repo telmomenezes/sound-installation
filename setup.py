@@ -14,7 +14,10 @@ setup(
     description='Sound installation',
     python_requires=python_requires,
     packages=find_packages(),
-    install_requires=['pyserial'],
+    install_requires=[
+        'pyserial',
+        'python-vlc'
+    ],
     entry_points='''
         [console_scripts]
         soundinst=soundinst.__main__:cli
