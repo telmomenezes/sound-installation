@@ -1,6 +1,6 @@
 import argparse
 
-from soundinst.inst import play, list_ports
+from soundinst.inst import play, list_serial_ports
 
 
 def cli():
@@ -15,6 +15,6 @@ def cli():
     if args.command == 'play':
         play(args.dir)
     elif args.command == 'ports':
-        list_ports()
+        list_serial_ports()
     else:
         print('Unknown command: {}'.format(args.command))
